@@ -20,6 +20,29 @@ local config = {
     "       \\::::/    /              \\::::/    /              \\::::/    /       ",
     "        \\::/____/                \\::/    /                \\::/____/        ",
     "                                  \\/____/                  ~~              "
+  },
+
+  plugins = {
+    init = {
+      {
+        "ggandor/leap.nvim",
+        keys = { "s", "S" },
+        config = function()
+          local leap = require "leap"
+          leap.set_default_keymaps()
+        end,
+      },
+      { "vim-test/vim-test" }
+    }
+  },
+
+  mappings = {
+    n = {
+      ["<leader>tn"] = { "<cmd>TestNearest<cr>", desc = "Run test under the current cursor line" },
+      ["<leader>tf"] = { "<cmd>TestFile<cr>", desc = "Run test for the current file" },
+      ["<leader>tl"] = { "<cmd>TestLast<cr>", desc = "Run the previously ran test" },
+      ["<leader>tv"] = { "<cmd>TestVisit<cr>", desc = "Go to the matching test" },
+    }
   }
 }
 
