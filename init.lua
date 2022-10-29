@@ -32,7 +32,9 @@ local config = {
           leap.set_default_keymaps()
         end,
       },
-      { "vim-test/vim-test" }
+      { "vim-test/vim-test" },
+      { "christoomey/vim-tmux-navigator" },
+      { "tpope/vim-surround" }
     }
   },
 
