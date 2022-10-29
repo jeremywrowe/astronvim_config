@@ -38,10 +38,10 @@ local config = {
 
   mappings = {
     n = {
-      ["<leader>tn"] = { "<cmd>TestNearest<cr>", desc = "Run test under the current cursor line" },
-      ["<leader>tf"] = { "<cmd>TestFile<cr>", desc = "Run test for the current file" },
-      ["<leader>tl"] = { "<cmd>TestLast<cr>", desc = "Run the previously ran test" },
-      ["<leader>tv"] = { "<cmd>TestVisit<cr>", desc = "Go to the matching test" },
+      ["<leader>Tn"] = { "<cmd>TestNearest<cr>", desc = "Run test under the current cursor line" },
+      ["<leader>Tf"] = { "<cmd>TestFile<cr>", desc = "Run test for the current file" },
+      ["<leader>Tl"] = { "<cmd>TestLast<cr>", desc = "Run the previously ran test" },
+      ["<leader>Tv"] = { "<cmd>TestVisit<cr>", desc = "Go to the matching test" },
     }
   }
 }
