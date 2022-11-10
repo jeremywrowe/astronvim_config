@@ -22,6 +22,12 @@ local config = {
     "                                  \\/____/                  ~~              "
   },
 
+  lsp = {
+    servers = {
+      "sorbet"
+    }
+  },
+
   plugins = {
     init = {
       {
